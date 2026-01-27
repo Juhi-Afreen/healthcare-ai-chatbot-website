@@ -1,0 +1,38 @@
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+         <!-- Logo -->
+         <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+            <img src="assets/images/logo.svg" alt="Plus Logo" class="w-10 h-10">
+            <span class="font-bold text-2xl tracking-tight text-plus-blue">Plus <span class="text-gray-500 font-normal">Web Team</span></span>
+         </div>
+
+         <!-- Desktop Menu -->
+         <div class="hidden md:flex items-center space-x-8">
+            <a href="#features" class="text-gray-600 hover:text-plus-blue font-medium transition-colors">Features</a>
+            <a href="#how-it-works" class="text-gray-600 hover:text-plus-blue font-medium transition-colors">How it Works</a>
+            <a href="#benefits" class="text-gray-600 hover:text-plus-blue font-medium transition-colors">Benefits</a>
+            <a href="#testimonials" class="text-gray-600 hover:text-plus-blue font-medium transition-colors">Testimonials</a>
+            <a href="#contact" class="bg-plus-orange hover:bg-yellow-500 text-white px-6 py-2.5 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg btn-pulse">Get a Free Demo</a>
+         </div>
+
+         <!-- Mobile Menu Button -->
+         <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-plus-blue hover:text-plus-orange focus:outline-none">
+               <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+         </div>
+      </div>
+   </div>
+
+   <!-- Mobile Menu Panel -->
+   <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+      <div class="px-4 pt-2 pb-6 space-y-2 shadow-xl">
+         <a href="#features" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-plus-blue hover:bg-gray-50 rounded-md">Features</a>
+         <a href="#how-it-works" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-plus-blue hover:bg-gray-50 rounded-md">How it Works</a>
+         <a href="#benefits" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-plus-blue hover:bg-gray-50 rounded-md">Benefits</a>
+         <a href="#contact" class="block px-3 py-3 text-base font-medium text-white bg-plus-blue rounded-md text-center mt-4">Get Started</a>
+      </div>
+   </div>
+</nav>
