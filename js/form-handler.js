@@ -9,9 +9,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = new FormData(leadForm);
       console.log("Form Submitted", Object.fromEntries(formData));
 
-      // Feedback to user
-      alert("Thank you! Our team will contact you shortly.");
+      // Feedback to user: show modal
+      const modal = document.getElementById("success-modal");
+      if (modal) {
+        modal.classList.remove("hidden");
+        // Optional: trap focus or add accessibility improvements
+      }
       leadForm.reset();
+
+      // Close modal handler
+      const closeBtn = document.getElementById("close-modal-btn");
+      if (closeBtn) {
+        closeBtn.onclick = () => {
+          modal.classList.add("hidden");
+        };
+      }
     });
   }
 });
